@@ -17,7 +17,7 @@ char *_getenv(const char *name);
 void exit_command(char *arg);
 void setenv_command(const char *variable, const char *value);
 void unsetenv_command(const char *variable);
-
-
-
+void cd_command(char **args);
+void handle_command_separator(char *input);
+void execute_command(char **args);
 #endif /* SIMPLE_SHELL_H */

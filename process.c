@@ -13,7 +13,6 @@ void process_command(char *input)
 	char *args[MAX_ARGS];
 	char *token;
 	const char *delim = " \t\n";
-	char *executable_path;
 	int i = 0;
 
 	token = _strtok(input, delim);
@@ -36,17 +35,13 @@ void process_command(char *input)
 			print_env();
 			return;
 		}
-
-		executable_path = find_executable_in_path(args[0]);
-		if (executable_path)
+		if (strcmp(args[0], "cd") == 0)
 		{
-			args[0] = executable_path;
-			executeCommand(args);
-			free(executable_path);
+			cd_command(args);
 		}
 		else
-		{
-			fprintf(stderr, "%s: command not found\n", args[0]);
+		{	
+			 execute_command(args);
 		}
 	}
 }

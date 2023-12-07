@@ -18,7 +18,7 @@ int main(void)
                 {
                         break;
                 }
-                process_command(input);
+                handle_command_separator(input);
         }
         return (0);
 }
