@@ -1,10 +1,10 @@
 #include "simple-shell.h"
 
 /**
- * _strtok - Custom implementation of strtok
- * @str: The string to be tokenized
- * @delim: The delimiter characters
- * Return: Pointer to the next token or NULL if there are no more tokens
+ *_strtok - Custom implementation of strtok
+ *@str: The string to be tokenized
+ *@delim: The delimiter characters
+ *Return: Pointer to the next token or NULL if there are no more tokens
  */
 
 char *_strtok(char *str, const char *delim)

@@ -5,7 +5,6 @@
  * execute_command - Executes a given command
  * @args: An array of arguments where args[0] is the command
  *
- *
  */
 
 void execute_command(char **args)

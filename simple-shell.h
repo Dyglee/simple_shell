@@ -20,4 +20,5 @@ void unsetenv_command(const char *variable);
 void cd_command(char **args);
 void handle_command_separator(char *input);
 void execute_command(char **args);
+
 #endif /* SIMPLE_SHELL_H */

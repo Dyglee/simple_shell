@@ -4,8 +4,9 @@
  * cd_command - Changes the current directory of the process
  * @args: Arguments array where args[0] is "cd" and args[1] is the directory
  *
- *Return
+ *
  */
+
 void cd_command(char **args)
 {
 	char *new_dir = args[1];

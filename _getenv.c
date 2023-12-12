@@ -1,9 +1,9 @@
 #include "simple-shell.h"
 
 /**
- * _getenv - Retrieves the value of an environment variable
- * @name: Name of the environment variable
- * Return: Value of the environment variable, or NULL if not found
+ *_getenv - Retrieves the value of an environment variable
+ *@name: Name of the environment variable
+ *Return: Value of the environment variable, or NULL if not found
  *
  */
 

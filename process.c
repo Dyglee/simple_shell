@@ -6,8 +6,6 @@
  *
  */
 
-
-
 void process_command(char *input)
 {
 	char *args[MAX_ARGS];
@@ -40,7 +38,7 @@ void process_command(char *input)
 			cd_command(args);
 		}
 		else
-		{	
+		{
 			 execute_command(args);
 		}
 	}
