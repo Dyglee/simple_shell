@@ -17,7 +17,7 @@ int hsh(info_t *info, char **av)
 	{
 		clear_info(info);
 		if (interactive(info))
-			_puts("$ ");
+			_puts("cisfun$ ");
 		_eputchar(BUF_FLUSH);
 		input_result = get_input(info);
 		if (input_result != -1)
