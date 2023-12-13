@@ -19,7 +19,8 @@ int main(int ac, char **av)
 
    if (ac == 2)
     {
-        file_descriptor = open(av[1], O_RDONLY);
+       /* file_descriptor = open(av[1], O_RDONLY);*/
+	    file_descriptor = -1;
         if (file_descriptor == -1)
         {
             if (errno == EACCES)
