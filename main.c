@@ -19,7 +19,7 @@ int main(int ac, char **av)
 
    if (ac == 2)
     {
-       /* file_descriptor = open(av[1], O_RDONLY);*/
+       
 	    file_descriptor = -1;
         if (file_descriptor == -1)
         {
@@ -40,7 +40,7 @@ int main(int ac, char **av)
     }
 
     populate_env_list(shell_info);
-   /* read_history(shell_info);*/
+   
     hsh(shell_info, av);
 
     return (EXIT_SUCCESS);

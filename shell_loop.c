@@ -31,7 +31,7 @@ int hsh(info_t *info, char **av)
 			_putchar('\n');
 		free_info(info, 0);
 	}
-/*	write_history(info);*/
+
 	free_info(info, 1);
 	if (!interactive(info) && info->status)
 		exit(info->status);
@@ -60,11 +60,7 @@ int find_builtin(info_t *info)
 		{"exit", _myexit},
 		{"env", _myenv},
 		{"help", _myhelp},
-		{"history", _myhistory},
-	/*	{"setenv", _mysetenv},*/
-	/*	{"unsetenv", _myunsetenv},*/
 		{"cd", _mycd},
-	/*	{"alias", _myalias},*/
 		{NULL, NULL}
 	};
 

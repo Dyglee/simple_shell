@@ -18,7 +18,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 	
 		free(*buf);
 		*buf = NULL;
-	/*	signal(SIGINT, sigintHandler); */
+	
 #if USE_GETLINE
 		r = getline(buf, &len_p, stdin);
 #else
@@ -32,7 +32,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 				r--;
 			}
 			info->linecount_flag = 1;
-			/*remove_comments(*buf);*/
+			
 			build_history_list(info, *buf, info->histcount++);
 			{
 				*len = r;
@@ -155,17 +155,4 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	return (s);
 }
 
-/**
- * sigintHandler - Blocks the Ctrl-C signal.
- * @sig_num: The signal number.
- *
- * Return: void.
- */
-/*
-void sigintHandler(__attribute__((unused))int sig_num)
-{
-	_puts("\n");
-	_puts("$ ");
-	_putchar(BUF_FLUSH);
-}
-*/
+
