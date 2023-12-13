@@ -24,15 +24,15 @@ void process_command(char *input)
 
 	if (args[0] != NULL)
 	{
-		if (strcmp(args[0], "exit") == 0)
+		if (_strcmp(args[0], "exit") == 0)
 		{
 		exit_command(args[1]);
 		}
-		else if (strcmp(args[0], "env") == 0)
+		else if (_strcmp(args[0], "env") == 0)
 		{
 			print_env();
 		}
-		else if (strcmp(args[0], "cd") == 0)
+		else if (_strcmp(args[0], "cd") == 0)
 		{
 			cd_command(args);
 		}

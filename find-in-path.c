@@ -14,25 +14,28 @@ char *find_executable_in_path(const char *command)
 
 	if (!path || access(command, X_OK) == 0)
 	{
-		return (strdup(command));
+		return (_strdup(command));
 	}
 
-	path_copy = strdup(path);
+	path_copy = _strdup(path);
 	if (!path_copy)
 	{
 		return (NULL);
 	}
 
-	command_len = strlen(command);
-	token = strtok(path_copy, ":");
+	command_len = _strlen(command);
+	token = _strtok(path_copy, ":");
 
 	while (token != NULL)
 	{
-		path_len = strlen(token);
+		path_len = _strlen(token);
 		full_path = malloc(path_len + command_len + 2);
 		if (full_path)
 		{
-			sprintf(full_path, "%s/%s", token, command);
+			_strcat(full_path, token);
+           		 _strcat(full_path, "/");
+           		 _strcat(full_path, command);
+
 			if (access(full_path, X_OK) == 0)
 			{
 				free(path_copy);
@@ -40,7 +43,7 @@ char *find_executable_in_path(const char *command)
 			}
 			free(full_path);
 		}
-		token = strtok(NULL, ":");
+		token = _strtok(NULL, ":");
 	}
 
 	free(path_copy);

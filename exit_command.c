@@ -10,7 +10,7 @@ void exit_command(char *arg)
 {
 	if (arg != NULL)
 	{
-		int exit_status = atoi(arg);
+		int exit_status = _atoi(arg);
 
 		exit(exit_status);
 	}
