@@ -17,7 +17,7 @@ int main(int ac, char **av)
         : "=r" (file_descriptor)
         : "r" (file_descriptor));
 
-    if (ac == 2)
+   if (ac == 2)
     {
         file_descriptor = open(av[1], O_RDONLY);
         if (file_descriptor == -1)
