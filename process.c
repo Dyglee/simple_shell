@@ -30,12 +30,12 @@ void process_command(char *input)
 		{
 		exit_command(args[1]);
 		}
-		if (strcmp(args[0], "env") == 0)
+		else if (strcmp(args[0], "env") == 0)
 		{
 			print_env();
 			return;
 		}
-		if (strcmp(args[0], "cd") == 0)
+		else if (strcmp(args[0], "cd") == 0)
 		{
 			cd_command(args);
 		}
