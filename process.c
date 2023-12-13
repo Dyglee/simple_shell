@@ -28,10 +28,7 @@ void process_command(char *input)
 		{
 		exit_command(args[1]);
 		}
-		else if (_strcmp(args[0], "env") == 0)
-		{
-			print_env();
-		}
+		
 		else if (_strcmp(args[0], "cd") == 0)
 		{
 			cd_command(args);
