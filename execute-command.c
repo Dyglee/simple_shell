@@ -16,6 +16,7 @@ void execute_command(char **args)
 	{
 		args[0] = executable_path;
 		executeCommand(args);
+		free(executable_path);
 	}
 	else
 	{

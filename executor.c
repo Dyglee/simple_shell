@@ -38,5 +38,6 @@ void executeCommand(char *const argv[])
         perror("fork");
     }
 
+free(full_path);
 }
 

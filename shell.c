@@ -27,6 +27,5 @@ int main(void)
 
 		handle_command_separator(input);
 	}
-	free(input);
 	return (0);
 }
