@@ -15,12 +15,12 @@ char *_getenv(const char *name)
 
 	while ((entry = environ[i]) != NULL)
 	{
-		delimiter = strchr(entry, '=');
+		delimiter = _strchr(entry, '=');
 		if (delimiter != NULL)
 		{
 			int name_length = delimiter - entry;
 
-			if (strncmp(entry, name, name_length) == 0 && name[name_length] == '\0')
+			if (_strncmp(entry, name, name_length) == 0 && name[name_length] == '\0')
 			{
 				return (delimiter + 1);
 			}

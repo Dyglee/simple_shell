@@ -25,7 +25,7 @@ void cd_command(char **args)
 	{
 		new_dir = home_dir;
 	}
-	else if (strcmp(new_dir, "-") == 0)
+	else if (_strcmp(new_dir, "-") == 0)
 	{
 		new_dir = prev_dir;
 		printf("%s\n", new_dir);

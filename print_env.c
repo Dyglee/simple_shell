@@ -11,7 +11,7 @@ void print_env(void)
 
 	while (environ[i] != NULL)
 	{
-		printf("%s\n", environ[i]);
+		print_string(environ[i]);
 		i++;
 	}
 }

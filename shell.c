@@ -14,7 +14,7 @@ int main(void)
 
 	while (1)
 	{
-		printf("#cisfun$ ");
+		print_prompt("#cisfun$ ");
 		read = getline(&input, &len, stdin);
 		if (read == -1)
 		{
