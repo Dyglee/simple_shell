@@ -104,6 +104,7 @@ int replace_alias(info_t *info)
  *
  * Return: 1 if replaced, 0 otherwise.
  */
+/*
 int replace_vars(info_t *info)
 {
     int i = 0;
@@ -136,7 +137,7 @@ int replace_vars(info_t *info)
         replace_string(&info->argv[i], _strdup(""));
     }
     return (0);
-}
+}*/
 
 /**
  * replace_string - Replaces a string.
