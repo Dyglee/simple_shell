@@ -31,7 +31,6 @@ void process_command(char *input)
 		else if (strcmp(args[0], "env") == 0)
 		{
 			print_env();
-			return;
 		}
 		else if (strcmp(args[0], "cd") == 0)
 		{

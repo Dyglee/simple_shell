@@ -18,12 +18,15 @@ int main(void)
 		read = getline(&input, &len, stdin);
 		if (read == -1)
 		{
+		if (feof(stdin)) {
+                print_string("\n");
+            	}
 			free(input);
 			break; 
 		}
 
 		handle_command_separator(input);
 	}
-
+	free(input);
 	return (0);
 }

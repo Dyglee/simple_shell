@@ -20,6 +20,7 @@ void execute_command(char **args)
 	}
 	else
 	{
-		fprintf(stderr, "%s: command not found\n", args[0]);
+	print_string(args[0]);
+        print_string(": command not found\n");
 	}
 }
