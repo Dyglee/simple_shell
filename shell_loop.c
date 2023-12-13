@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * hsh - Main shell loop.
- * @info: Parameter and return info struct.
- * @av: Argument vector from main().
+ *hsh - Main shell loop.
+ *@info: Parameter and return info struct.
+ *@av: Argument vector from main().
  *
  * Return: 0 on success, 1 on error, or error code.
  */
+
 int hsh(info_t *info, char **av)
 {
 	ssize_t input_result = 0;
@@ -132,7 +133,6 @@ void fork_cmd(info_t *info)
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-		/* TODO: PUT ERROR FUNCTION */
 		perror("Error:");
 		return;
 	}
@@ -145,7 +145,6 @@ void fork_cmd(info_t *info)
 				exit(126);
 			exit(1);
 		}
-		/* TODO: PUT ERROR FUNCTION */
 	}
 	else
 	{
