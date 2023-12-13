@@ -1,9 +1,9 @@
 #include "simple-shell.h"
 
 /**
- * find_executable_in_path - Searches for an executable in the PATH
- * @command: The command to search for
- * Return: Full path to the executable, or NULL if not found
+ *find_executable_in_path - Searches for an executable in the PATH
+ *@command: The command to search for
+ *Return: Full path to the executable, or NULL if not found
  */
 
 char *find_executable_in_path(const char *command)

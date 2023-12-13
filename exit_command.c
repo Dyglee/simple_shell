@@ -5,6 +5,7 @@
  * @arg: The exit status argument (as a string) provided to the "exit" command.
  *
  */
+
 void exit_command(char *arg)
 {
 	if (arg != NULL)

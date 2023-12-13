@@ -1,10 +1,9 @@
 #include "simple-shell.h"
 
-
 /**
  * main - Entry point for the simple shell
  * Return: 0 on successful execution, or EOF .
- * *
+ *
  */
 
 int main(void)
@@ -20,7 +19,7 @@ int main(void)
 		if (read == -1)
 		{
 			free(input);
-			break; /* EOF or error */
+			break; 
 		}
 
 		handle_command_separator(input);
