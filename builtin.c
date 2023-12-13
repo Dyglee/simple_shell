@@ -8,7 +8,7 @@
  */
 int _myexit(info_t *info)
 {
-    int exit_check;
+/*    int exit_check;
 
     if (info->argv[1])
     {
@@ -23,8 +23,8 @@ int _myexit(info_t *info)
         }
         info->err_num = _erratoi(info->argv[1]);
         return (-2);
-    }
-    info->err_num = -1;
+    }*/
+    info->err_num = 0;
     return (-2);
 }
 
