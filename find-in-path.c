@@ -32,6 +32,7 @@ char *find_executable_in_path(const char *command)
 		full_path = malloc(path_len + command_len + 2);
 		if (full_path)
 		{
+			full_path[0] = '\0';
 			_strcat(full_path, token);
            		 _strcat(full_path, "/");
            		 _strcat(full_path, command);
