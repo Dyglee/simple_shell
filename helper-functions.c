@@ -22,21 +22,6 @@ int _strcmp(char *s1, char *s2)
 		return (*s1 < *s2 ? -1 : 1);
 }
 
-/**
- **_strchr - locates a character in a string
- *@s: the string to be parsed
- *@c: the character to look for
- *Return: (s) a pointer to the memory area s
- */
-char *_strchr(char *s, char c)
-{
-	do {
-		if (*s == c)
-			return (s);
-	} while (*s++ != '\0');
-
-	return (NULL);
-}
 
 /**
  * _strncmp - Compare two strings up to a given number of characters

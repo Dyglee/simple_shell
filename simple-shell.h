@@ -23,13 +23,12 @@ void handle_command_separator(char *input);
 void execute_command(char **arg);
 
 /*help us */
-int _strlen(char *s);
+int _strlen(const char *s);
 char *_strdup(const char *s);
 char *_strtok(char *str, const char *delim);
-char *_strchr(char *s, char c);
+const char *_strchr(const char *s, char c);
 size_t _strcspn(const char *s, const char *reject);
 int _strcmp(char *s1, char *s2);
-char *_strchr(char *s, char c);
 int _strncmp(const char *s1, const char *s2, size_t n);
 ssize_t print_string(const char *str);
 ssize_t print_prompt(const char *str);

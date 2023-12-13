@@ -5,7 +5,7 @@
  * @s: String to calculate the length of
  * Return: Length of the string
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int length = 0;
 
@@ -79,7 +79,7 @@ char *_strtok(char *str, const char *delim)
  * @c: Character to find
  * Return: Pointer to the first occurrence of the character in the string
  */
-char *_strchr(char *s, char c)
+const char *_strchr(const char *s, char c)
 {
 	while (*s != '\0')
 	{
