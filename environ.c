@@ -40,7 +40,7 @@ char *_getenv(info_t *info, const char *name)
  *             constant function prototype.
  * Return: Always 0
  */
-int _mysetenv(info_t *info)
+/*int _mysetenv(info_t *info)
 {
     if (info->argc != 3)
     {
@@ -50,7 +50,7 @@ int _mysetenv(info_t *info)
     if (_setenv(info, info->argv[1], info->argv[2]))
         return (0);
     return (1);
-}
+}*/
 
 /**
  * _myunsetenv - Remove an environ variable using _myunsetenv.
@@ -58,7 +58,7 @@ int _mysetenv(info_t *info)
  *                 constant function prototype.
  * Return: Always 0
  */
-int _myunsetenv(info_t *info)
+/*int _myunsetenv(info_t *info)
 {
     int i;
 
@@ -70,8 +70,8 @@ int _myunsetenv(info_t *info)
     for (i = 1; i <= info->argc; i++)
         _unsetenv(info, info->argv[i]);
 
-    return (0);
-}
+   return (0);
+}*/
 
 /**
  * populate_env_list - Populate the linked list with environment variables using populate_env_list.

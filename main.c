@@ -39,7 +39,7 @@ int main(int ac, char **av)
     }
 
     populate_env_list(shell_info);
-    read_history(shell_info);
+   /* read_history(shell_info);*/
     hsh(shell_info, av);
 
     return (EXIT_SUCCESS);

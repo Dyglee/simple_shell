@@ -29,7 +29,7 @@ char *get_history_file(info_t *info)
  *
  * Return: 1 on success, -1 on failure.
  */
-int write_history(info_t *info)
+/*int write_history(info_t *info)
 {
 	ssize_t fd;
 	char *filename = get_history_file(info);
@@ -50,7 +50,7 @@ int write_history(info_t *info)
 	_putfd(BUF_FLUSH, fd);
 	close(fd);
 	return (1);
-}
+}*/
 
 /**
  * read_history - Reads command history from a file.
@@ -58,7 +58,7 @@ int write_history(info_t *info)
  *
  * Return: Number of history entries read on success, 0 on failure.
  */
-int read_history(info_t *info)
+/*int read_history(info_t *info)
 {
 	int i, last = 0, linecount = 0;
 	ssize_t fd, rdlen, fsize = 0;
@@ -99,7 +99,7 @@ int read_history(info_t *info)
 		delete_node_at_index(&(info->history), 0);
 	renumber_history(info);
 	return (info->histcount);
-}
+}*/
 
 /**
  * build_history_list - Adds an entry to a history linked list.
